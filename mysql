@@ -4,5 +4,8 @@ create database megalead_admin character set utf8 collate utf8_general_ci;
 ### Создать нового пользователя ###
 create user megalead@localhost identified by 'mysqsecretpassword';
 
+### Указать права пользователя ###
+grant all privileges on mydatabase.tables to user@host;
+
 ### Показать список пользователей ###
 select host , user from mysql.user;
