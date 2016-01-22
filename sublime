@@ -1,0 +1,26 @@
+"theme": "Seti.sublime-theme",
+  
+    "caret_extra_width": 2,                 //  to have a wider/thicker caret
+    "caret_extra_bottom": 3,                //  to make the caret = to the line height (the theme currently support 0,3,5)
+    "caret_extra_top": 3,
+  
+    "overlay_scroll_bars": "enabled",       //  to show scrollbars only when scrolling
+    "highlight_line": true,                 //  to highlight the current line
+
+// Material theme
+    "theme": "Material-Theme-Darker.sublime-theme",
+    "color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+
+	"overlay_scroll_bars": "enabled",
+    "line_padding_top": 3,
+    "line_padding_bottom": 3,
+    "always_show_minimap_viewport": true,
+    "bold_folder_labels": true,
+    "indent_guide_options": [ "draw_normal", "draw_active" ],
+    "font_options": [ "gray_antialias" ],
+
+    "material_theme_small_tab"                : true , // Set small tabs
+    "material_theme_accent_lime"              : true , // set green lime accent color
+    "material_theme_tabs_autowidth"           : true , // Enable autowidth for tabs
+    "material_theme_contrast_mode"            : true , // Enable sidebar and panels contrast mode
+    "material_theme_tree_headings"            : true , // Show siderbar headings

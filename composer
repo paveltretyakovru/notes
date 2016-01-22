@@ -1,0 +1,5 @@
+### Install ####
+curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+
+### ! Cannot create cache directory ####
+sudo chown -R $USER $HOME/.composer

@@ -1,0 +1,24 @@
+### Create ###
+composer create-project laravel/laravel {directory} "~5.0.0" --prefer-dist
+
+### Server ###
+sudo apt-get install php5-mcrypt
+
+### Mysql ###
+create database popser character set utf8 collate utf8_general_ci;
+create user 'popser'@'localhost' identified by 'Popsersecret321!';
+grant all privileges on popser.* to 'popser'@'localhost';
+flush priveleges;
+
+### Prepare ###
+chmod 755 -R {project_foldr}
+chmod o+w -R {project_folder}/storage
+comment "Options -MultiViews" in public/.htaccess
+composer install
+
+cp .env.example .exp
+php artisan key:generate
+
+### Errors ###
+Vendor files permission denied:
+php artisan cache:clear

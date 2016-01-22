@@ -1,0 +1,5 @@
+### TRIGERS ####
+INSERT INTO trig.log Set msg = 'insert', row_id = NEW.id , value = NEW.content
+
+### TRIGGER CONCAT DATA ###
+SET NEW.full_name = CONCAT(NEW.first_name, ' ', NEW.last_name);

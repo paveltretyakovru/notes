@@ -1,0 +1,2 @@
+# Create folder archive
+tar czf  ~/docs.tar.gz  /usr/local/docs/
