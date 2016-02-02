@@ -1,5 +1,9 @@
 ### TRIGERS ####
-INSERT INTO trig.log Set msg = 'insert', row_id = NEW.id , value = NEW.content
+INSERT INTO trig.log Set `msg` = 'insert', `row_id` = NEW.id , `value` = NEW.content
+
+### FULL TRIGGER ###
+create trigger `NAME_TRIGGER` after insert on `table_name` for each row insert into DATABASE.TABLE_NAME set `field` = 'new_value'
+
 
 ### TRIGGER CONCAT DATA ###
 SET NEW.full_name = CONCAT(NEW.first_name, ' ', NEW.last_name);
