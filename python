@@ -1,0 +1,17 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Configs
+
+PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
+
+TEMPLATES_DIR = (
+	os.path.join(PROJECT_ROOT, 'templates').replace('\\','/'),
+        os.path.join(PROJECT_ROOT, 'appdir/templates').replace('\\','/'),
+)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Render templtate
+from django.http import HttpResponse
+from django.shortcuts import render
+
+def index(request):
+    return render(request, 'templateName.html', {})
